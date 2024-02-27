@@ -1,0 +1,243 @@
+//MOBILE GENERAL STYLE
+.ms-column.sm-cols-12 {
+    width: 100%;
+}
+.ms-column.sm-cols-6 {
+    width: 50%;
+}
+.ms-column.sm-cols-3 {
+    width: 25%;
+}
+
+.ms-rows-wrapper {
+    padding: 50px 15px;
+}
+.ms-cols-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+}
+
+.custom-shape-divider-top-1669940956 {
+    & svg {
+        height: 50px;
+    }
+}
+
+.custom-shape-divider-bottom-1669902835 {
+    & svg {
+        height: 50px;
+    }
+}
+
+//BUTTON STYLE
+.ms-button {
+    margin-top: 30px;
+}
+
+//MOBILE SITE STYLE
+.ms-header-wrapper {
+    & .ms-rows-wrapper {
+        &.ms-header {
+            padding: 20px 15px;
+
+            & .hamburger {
+                width: 50px;
+                height: 50px;
+                padding: 13px;
+            }
+
+            & .ms-menu-wrapper {
+                & .ms-navigation-container {
+                    padding: 50px 0px;
+
+                    & ul {
+                        & li {
+                            & a {
+                                font-size: 35px;
+
+                                & span.top,
+                                & span.bottom {
+                                    height: 35px; //SHOULD SAME VALUE ON a FONT SIZE
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .ms-cols-wrapper {
+        flex-direction: row;
+
+        & .ms-column:nth-child(1) {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            & .ms-logo {
+                width: 50px;
+            }
+        }
+    }
+}
+
+.ms-site-wrapper {
+    & .ms-rows-wrapper {
+        &.ms-banner {
+            height: 700px;
+
+            & h1 {
+                overflow: hidden;
+            }
+        }
+
+        &.ms-about {
+            & .ms-about-image {
+                width: calc(100% - 0px);
+            }
+            & h2 {
+                margin-top: 30px;
+            }
+        }
+
+        &.ms-experience {
+            padding-top: 100px;
+            padding-bottom: 100px;
+
+            & .ms-timeline-wrapper {
+                & .ms-rows-wrapper {
+                    padding-top: 50px;
+
+                    & .ms-cols-wrapper {
+                        flex-direction: column-reverse;
+    
+                        & .ms-column:nth-child(2) {
+                            padding: 0;
+    
+                            & img {
+                                width: 100%;
+                                max-width: calc(100% - 100px);
+                            }
+                        }
+
+                        & .ms-timeline-container {
+                            padding-left: 65px;
+                            margin-top: 30px;
+
+                            &::before {
+                                width: 3px;
+                                left: 8px;
+                            }
+
+                            & .ms-timeline {
+
+                                &::before {
+                                    width: 10px;
+                                    height: 10px;
+                                    left: -65px;
+                                }
+                                
+                                &::after {
+                                    width: 20px;
+                                    left: -35px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        &.ms-projects {
+            padding-top: 100px;
+            padding-bottom: 100px;
+
+            & .ms-featured-wrapper {
+                padding-bottom: 50px;
+
+                & .ms-featured-image-wrapper {
+                    & .ms-image-background {
+                        & .ms-featured-image {
+                            height: 165px;
+                        }
+                    }
+                }
+                & .ms-featured-content-wrapper {
+                    padding-top: 30px;
+                    padding-left: 0px;
+                }
+            }
+
+            & .ms-projects-wrapper {
+                flex-direction: column;
+                padding: 50px 0px;
+
+                & .ms-project-image-wrapper {
+                    & img {
+                        width: calc(100% - 30px);
+                        margin: 0 auto;
+                    }   
+                }
+
+                & .ms-project-content-wrapper {
+                    align-items: center;
+                    padding-left: 0;
+                    margin-top: 30px;
+
+                    & h3 {
+                        width: 100%;
+                        text-align: left;
+                    }
+
+                    & p {
+                        width: 100%;
+                        text-align: left;
+                    }
+
+                    & .ms-projects-tags-wrapper {
+                        justify-content: flex-start;
+                        width: 100%;
+
+                        & .ms-projects-tags {
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                        }
+                    }
+
+                    & .ms-button {
+                        margin-left: 0;
+                        margin-right: auto;
+                    }
+                }
+            }
+
+            & .paginationjs {
+                padding-top: 50px;
+            }
+        }
+
+        &.ms-contact {
+            & .ms-column:nth-child(2) {
+                margin-top: 50px;
+                padding: 0;
+            }
+
+            & #map {
+                width: 100%;
+                height: 250px;
+            }
+        }
+    }
+}
+
+.ms-footer-wrapper {
+    & .ui-switch {
+        left: 15px;
+    }
+
+    & .ms-social-wrapper {
+        right: 15px;
+    }
+}

@@ -13,56 +13,56 @@ const projectList = [
         title: 'Event Listing',
         description: 'An app that showcase different types of events with a search and filter feature to easily navigate the specific event.',
         tags: 'HTML, CSS, JavaScript, Mixitup, FullCalendar',
-        link: 'projects/event-listing'
+        link: 'projects/event listing'
     },
     {
         image: 'src/images/mortgage-image.png',
         title: 'Mortgage Calculator',
         description: 'An automated tools that enable users to determine the financial implications of changes in one or more variables in a mortgage financing arrangement.',
         tags: 'HTML, CSS, JavaScript, Chart',
-        link: 'projects/mortgage-calculator'
+        link: 'projects/mortgage calculator'
     },
     {
         image: 'src/images/thumbnail-icon-slider-image.png',
         title: 'Thumbnail Icon Slider',
         description: 'Web feature incorporating a thumbnail icon slider, enabling effortless navigation through a visual array of content.',
         tags: 'HTML, CSS, JavaScript, Slick',
-        link: 'projects/thumbnail-icon-slider'
+        link: 'projects/thumbnail slider'
     },
     {
         image: 'src/images/testimonial-slider-image.png',
         title: 'Testimonial Slider',
         description: 'An interactive web element showcasing a dynamic carousel of authentic user experiences and glowing reviews.',
         tags: 'HTML, CSS, JavaScript, Swiper',
-        link: 'projects/testimonial-slider'
+        link: 'projects/testimonial slider'
     },
     {
         image: 'src/images/video-gallery-image.png',
         title: 'Video Gallery',
         description: 'An interactive web element offering a captivating showcase of diverse videos for an immersive viewing experience.',
         tags: 'HTML, CSS, JavaScript',
-        link: 'projects/video-gallery'
+        link: 'projects/video gallery'
     },
     {
         image: 'src/images/flip-box-image.png',
         title: 'Flip Box',
         description: 'An interactive web element showcasing information or images on both sides with engaging flipping motion and additional animations for a dynamic user experience.',
         tags: 'HTML, CSS, JavaScript',
-        link: 'projects/flip-box'
+        link: 'projects/flipbox'
     },
     {
         image: 'src/images/side-tabulation-image.png',
         title: 'Side Tabulation',
         description: 'An interactive web element offering quick and easy content organization for an enhanced browsing experience.',
         tags: 'HTML, CSS, JavaScript',
-        link: 'projects/side-tabulation'
+        link: 'projects/side tabulation'
     },
     {
         image: 'src/images/animated-photo-gallery-image.png, src/images/animated-video-gallery-image.png',
         title: 'Animated Media Gallery',
         description: 'An engaging multimedia gallery featuring an animated scrolling effect.',
         tags: 'HTML, CSS, JavaScript',
-        link: 'projects/animated-media-gallery'
+        link: 'projects/media gallery'
     }
 ]
 

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Calculator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="src/css/site.css">
+    <link rel="stylesheet" media='screen and (min-width: 320px) and (max-width: 520px)' href="src/css/mobile.css">
+</head>
+<body>
+    <div class="mc-main-wrapper">
+        <div class="mc-cols-wrapper">
+            <div class="mc-inputs-wrapper">
+                <div class="mc-label">Purchase Price</div>
+                <input type="text" id="mc-purchase-price" value="300000">
+                <input type="range" inputmode="decimal" step="1000" value="300000" min="0" max="3000000" id="mc-purchase-price-range">
+                
+                <div class="mc-label">Down Payment</div>
+                <div class="mc-down-payment-wrapper">
+                    <input type="text" id="mc-down-payment-decimal" value="0">
+                    <div class="mc-down-payment-rate-wrapper">
+                        <input type="number" max="100" id="mc-down-payment-rate" value="0">
+                        <span class="mc-input-group-text"><b>%</b></span>
+                    </div>
+                </div>
+                <input type="range" inputmode="decimal" step="1000" value="0" min="0" max="3000000" id="mc-down-payment-range">
+                
+                <div class="mc-label">Loan Terms <span class="mc-label-dynamic loan-terms"><span class="mc-years">30</span> Years</span></div>
+                <input type="range" step="1" value="30" min="1" max="30" id="mc-loan-terms-range">
+                
+                <div class="mc-label">Interest Rate <span class="mc-label-dynamic interest-rate"><span class="mc-rate">6</span> %</span></div>
+                <input type="range" step=".1" value="6" min=".1" max="20" id="mc-interest-rate-range">
+                
+                <div class="mc-monthly-payment">$1,799</div>
+                <div class="mc-label mc-monthly-payment-text">Interest Rate</div>
+            </div>
+            <div class="mc-chart-wrapper">
+                <canvas id="mc-chart"></canvas>
+                
+                <div class="mc-table-wrapper">
+                    <div class="mc-data-row">
+                        <div class="mc-box-wrapper">
+                            <h5 class="mc-summary-title">
+                                <span class="mc-box principalColor"> &nbsp; </span>
+                                Principal
+                            </h5>
+                        </div>
+                        <h5 class="mc-summary-value principal">$0</h5>
+                    </div>
+                    <div class="mc-data-row">
+                        <div class="mc-box-wrapper">
+                            <h5 class="mc-summary-title">
+                                <span class="mc-box interestColor"> &nbsp; </span>
+                                Interest
+                            </h5>
+                        </div>
+                        <h5 class="mc-summary-value interest">$0</h5>
+                    </div>
+                    <div class="mc-data-row">
+                        <div class="mc-box-wrapper">
+                            <h5 class="mc-summary-title">
+                                <span class="mc-box payableColor"> &nbsp; </span>
+                                Payable
+                            </h5>
+                        </div>
+                        <h5 class="mc-summary-value payable">$0</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mc-disclosure">
+            <div class="mc-text">
+                <b>Disclosure</b>
+                <p>This material is provided for general and educational purposes only; it is not intended to provide legal, tax, or investment advice.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="module" src="src/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+.vertical-wrapper.col-2 .gallery-col {
+    width: 50%;
+}
+.vertical-wrapper.col-3 .gallery-col {
+    width: 33.33%;
+}
+.vertical-wrapper.col-4 .gallery-col {
+    width: 25%;
+}
+.vertical-wrapper.col-5 .gallery-col {
+    width: 20%;
+}
+
+.horizontal-wrapper.col-2 .gallery-col {
+    width: calc(50% - 3px);
+}
+.horizontal-wrapper.col-3 .gallery-col {
+    width: calc(33.33% - 3px);
+}
+.horizontal-wrapper.col-4 .gallery-col {
+    width: calc(25% - 3px);
+}
+.horizontal-wrapper.col-5 .gallery-col {
+    width: calc(20% - 3px);
+}

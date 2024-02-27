@@ -1,0 +1,37 @@
+.res-box {
+    width: 100%;
+}
+.contents-box {
+    justify-content: center;
+    align-items: center;
+}
+.searchbar-con {
+    flex-direction: column;
+}
+.filterSearch {
+    width: 100%;
+}
+.searchbar-con {
+    align-items: flex-end;
+}
+.btn-container {
+    margin-top: 10px;
+}
+.filterCat, .filterCat2 {
+    width: 100%;
+    margin-right: 0;
+}
+.fc-header-toolbar {
+    display: flex !important;
+    flex-direction: column;
+}
+.fc-toolbar-chunk:nth-child(2){
+    order: 1;
+}
+.fc-toolbar-chunk:nth-child(1){
+    order: 2;
+    margin: 10px 0 !important;
+}
+.fc-toolbar-chunk:nth-child(3){
+    order: 3;
+}

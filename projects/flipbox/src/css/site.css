@@ -1,0 +1,373 @@
+* {
+    box-sizing: border-box;
+}
+.flipbox-main-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.flipbox-column-wrapper {
+    padding: 10px;
+    width: clamp(400px, 33.33%, 100%);
+    height: 500px;
+}
+.flipbox-column {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.flipbox-front, .flipbox-back {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: all linear 0.3s;
+}
+.flipbox-front {
+    background-color: #F7CCAC;
+}
+.flipbox-back {
+    background-color: #3A3845;
+}
+.flipbox-front .inner, .flipbox-back .inner {
+    z-index: 0;
+}
+.flipbox-front.true:before, .flipbox-back.true:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    border-radius: 15px;
+    background-color: rgba(0,0,0,0.5);
+}
+.flipbox-front img, .flipbox-back img {
+    position: relative;
+    display: block;
+    width: 115px;
+    height: 115px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    margin: 0 auto;
+    object-fit: cover;
+}
+.flipbox-front svg, .flipbox-back svg {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 90px;
+    height: 90px;
+}
+.flipbox-front svg, .flipbox-front svg path {
+    fill: #000;
+}
+.flipbox-back svg, .flipbox-back svg path {
+    fill: #fff;
+}
+.flipbox-front .title, .flipbox-back .title {
+    font-family: "Poppins";
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+}
+.flipbox-front .title {
+    color: #000;
+}
+.flipbox-back .title {
+    color: #F7CCAC;
+}
+.flipbox-front .description, .flipbox-back .description {
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 24px;
+    margin-top: 10px;
+}
+.flipbox-front .description {
+    color: #000;
+}
+.flipbox-back .description {
+    color: #fff;
+}
+.flipbox-front a, .flipbox-back a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 50px;
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    margin: 20px auto 0px;
+    border-radius: 50px;
+    transition: all ease-in-out .36s;
+    background-color: transparent;
+}
+.flipbox-front a {
+    color: #000;
+    border: 2px solid #000;
+}
+.flipbox-front a:hover {
+    color: #F7CCAC;
+    background-color: #000;
+}
+.flipbox-back a {
+    color: #F7CCAC;
+    border: 2px solid #F7CCAC;
+}
+.flipbox-back a:hover {
+    color: #000;
+    background-color: #F7CCAC;
+}
+
+
+/*FLIP EFFECTS*/
+.flipbox-column-wrapper.flip:hover .flipbox-column.flipLeft {
+    -ms-transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+.flipbox-column-wrapper.flip:hover .flipbox-column.flipRight {
+    -ms-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.flipbox-column-wrapper.flip:hover .flipbox-column.flipTop {
+    -ms-transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+}
+.flipbox-column-wrapper.flip:hover .flipbox-column.flipBottom {
+    -ms-transform: rotateX(-180deg);
+    -webkit-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+}
+.flip .flipbox-column {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+}
+.flip .flipbox-front, .flip .flipbox-back {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.flip .flipbox-front .inner.threeD, .flip .flipbox-back .inner.threeD {
+    transform: translateZ(60px) scale(.94);
+    -webkit-transform: translateZ(60px) scale(.94);
+}
+.flip .flipbox-front {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    -webkit-perspective: 1000px;
+}
+.flip .flipbox-back {
+    top: 0;
+    left: 0;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    -webkit-perspective: 1000px;
+}
+.flip .flipbox-column.flipLeft .flipbox-front, .flip .flipbox-column.flipRight .flipbox-front {
+    -ms-transform: rotateY(0deg);
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+}
+.flip .flipbox-column.flipLeft .flipbox-back, .flip .flipbox-column.flipRight .flipbox-back {
+    -ms-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.flip .flipbox-column.flipTop .flipbox-front, .flip .flipbox-column.flipBottom .flipbox-front {
+    -ms-transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+}
+.flip .flipbox-column.flipTop .flipbox-back, .flip .flipbox-column.flipBottom .flipbox-back {
+    -ms-transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+}
+
+
+/*PUSH EFFECTS*/
+.flipbox-column-wrapper.push:hover .pushLeft .flipbox-front {
+    top: 0%;
+    left: -100%;
+}
+.flipbox-column-wrapper.push:hover .pushLeft .flipbox-back {
+    top: 0%;
+    left: 0%;
+}
+.flipbox-column-wrapper.push:hover .pushRight .flipbox-front {
+    top: 0%;
+    left: 100%;
+}
+.flipbox-column-wrapper.push:hover .pushRight .flipbox-back {
+    top: 0%;
+    left: 0%;
+}
+.flipbox-column-wrapper.push:hover .pushTop .flipbox-front {
+    top: -100%;
+}
+.flipbox-column-wrapper.push:hover .pushTop .flipbox-back {
+    top: 0%;
+}
+.flipbox-column-wrapper.push:hover .pushBottom .flipbox-front {
+    top: 100%;
+}
+.flipbox-column-wrapper.push:hover .pushBottom .flipbox-back {
+    top: 0%;
+}
+.push .flipbox-column {
+    overflow: hidden;
+    border-radius: 15px;
+}
+.push .pushLeft .flipbox-front {
+    top: 0%;
+    left: 0%;
+}
+.push .pushLeft .flipbox-back {
+    top: 0%;
+    left: 100%;
+}
+.push .pushRight .flipbox-front {
+    top: 0%;
+    left: 0%;
+}
+.push .pushRight .flipbox-back {
+    top: 0%;
+    left: -100%;
+}
+.push .pushTop .flipbox-front {
+    top: 0%;
+    left: 0%;
+}
+.push .pushTop .flipbox-back {
+    top: 100%;
+    left: 0%;
+}
+.push .pushBottom .flipbox-front {
+    top: 0%;
+    left: 0%;
+}
+.push .pushBottom .flipbox-back {
+    top: -100%;
+    left: 0%;
+}
+
+
+/*SLIDE EFFECTS*/
+.flipbox-column-wrapper.slide:hover .slideLeft .flipbox-back {
+    top: 0%;
+    left: 0%;
+}
+.flipbox-column-wrapper.slide:hover .slideRight .flipbox-back {
+    top: 0%;
+    left: 0%;
+}
+.flipbox-column-wrapper.slide:hover .slideTop .flipbox-back {
+    top: 0%;
+    left: 0%;
+}
+.flipbox-column-wrapper.slide:hover .slideBottom .flipbox-back {
+    top: 0%;
+    left: 0%;
+}
+.slide .flipbox-column {
+    overflow: hidden;
+    border-radius: 15px;
+}
+.slide .slideLeft .flipbox-back {
+    top: 0%;
+    left: 100%;
+}
+.slide .slideRight .flipbox-back {
+    top: 0%;
+    left: -100%;
+}
+.slide .slideTop .flipbox-back {
+    top: 100%;
+    left: 0%;
+}
+.slide .slideBottom .flipbox-back {
+    top: -100%;
+    left: 0%;
+}
+
+
+/*FADE EFFECTS*/
+.flipbox-column-wrapper.fade:hover .flipbox-back {
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+}
+.fade .flipbox-column {
+    overflow: hidden;
+}
+.fade .flipbox-back {
+    top: 0%;
+    left: 0%;
+    opacity: 0;
+}
+
+
+/*ZOOM-IN EFFECTS*/
+.flipbox-column-wrapper.zoomIn:hover .flipbox-back {
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    transform: scale(1);
+}
+.zoomIn .flipbox-column {
+    overflow: hidden;
+}
+.zoomIn .flipbox-back {
+    top: 0%;
+    left: 0%;
+    opacity: 0;
+    transform: scale(0.7);
+}
+
+
+/*ZOOM-OUT EFFECTS*/
+.flipbox-column-wrapper.zoomOut:hover .flipbox-front {
+    top: 0%;
+    left: 0%;
+    z-index: 0;
+    opacity: 0;
+    transform: scale(0.7);
+}
+.zoomOut .flipbox-column {
+    overflow: hidden;
+}
+.zoomOut .flipbox-front {
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+
+
+

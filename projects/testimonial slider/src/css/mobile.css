@@ -1,0 +1,38 @@
+.cts-main-wrapper {
+  max-width: 326px;
+  margin: 0 auto;
+}
+.cts-main-wrapper .cts-slider-wrapper .swiperSlider {
+  max-width: 100%;
+}
+.cts-main-wrapper .cts-slider-wrapper .swiperSlider .swiper-slide {
+  padding: 30px 55px;
+}
+.cts-main-wrapper .cts-slider-wrapper .swiperSlider .swiper-slide .cts-icon-wrapper {
+  width: 50px;
+  height: 50px;
+}
+.cts-main-wrapper .cts-slider-wrapper .swiperSlider .swiper-slide .cts-details-wrapper .cts-image {
+  width: 100%;
+  max-width: 60px;
+}
+.cts-main-wrapper .cts-slider-wrapper .swiperSlider .swiper-slide .cts-details-wrapper .cts-info {
+  padding-left: 20px;
+}
+.cts-main-wrapper .cts-slider-wrapper .swiperSlider .swiper-slide .cts-details-wrapper .cts-info .cts-name {
+  font-size: 18px;
+}
+.cts-main-wrapper .cts-slider-wrapper .swiperSlider .swiper-slide .cts-details-wrapper .cts-info .cts-position {
+  font-size: 16px;
+}
+.cts-main-wrapper .cts-slider-wrapper .swiper-button-prev, .cts-main-wrapper .cts-slider-wrapper .swiper-button-next {
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+}
+.cts-main-wrapper .cts-slider-wrapper .swiper-button-prev i, .cts-main-wrapper .cts-slider-wrapper .swiper-button-next i {
+  font-size: 16px;
+}
+.cts-main-wrapper .swiper-pagination {
+  z-index: 1;
+}/*# sourceMappingURL=mobile.css.map */

@@ -1,0 +1,17 @@
+.videoGallery-Content.col1, .videoGallery-Content.col2, .videoGallery-Content.col3, .videoGallery-Content.col4, .videoGallery-Content.col5 {
+    width: 100%;
+}
+
+.videoGallery-Content {
+    width: 100%;
+}
+.videoGallery-PopupContainer {
+    padding: 15px;
+}
+.videoGallery-Popup {
+    width: 100%;
+}
+
+.videoGallery-Container {
+    max-width: calc(100% - 0px);
+}

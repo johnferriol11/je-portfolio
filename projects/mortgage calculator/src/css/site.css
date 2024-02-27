@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+    --inputRangeTrack: #a4a4a4;
+    --inputRangeThumb: #92C955;
+}
+
+.mc-main-wrapper {
+    position: relative;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 40px 36px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+.mc-cols-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.mc-inputs-wrapper #mc-purchase-price, .mc-down-payment-wrapper {
+    margin-bottom: 20px !important;
+}
+.mc-inputs-wrapper, .mc-chart-wrapper {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0px 12px;
+}
+.mc-main-wrapper input[type=text], .mc-main-wrapper input[type=number] {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff !important;
+    background-clip: padding-box;
+    border: 1px solid #ced4da !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.mc-main-wrapper input[type=number] {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.mc-main-wrapper input[type=range] {
+    width: 100%;
+    height: 25px;
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 10px 0 20px 0px;
+}
+.mc-main-wrapper input[type=range]:focus {
+    outline: none;
+}
+.mc-main-wrapper input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: var(--inputRangeTrack);
+}
+.mc-main-wrapper input[type=range]::-webkit-slider-thumb {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background: var(--inputRangeThumb);
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -11px;
+}
+.mc-label {
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 20px;
+}
+.mc-label-dynamic {
+    font-weight: 600;
+}
+.mc-down-payment-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mc-down-payment-decimal {
+    width: 60% !important;
+}
+.mc-down-payment-rate-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    padding-left: 3px;
+}
+.mc-input-group-text {
+    display: flex;
+    align-items: center;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    height: 40px;
+    color: #212529;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-left-width: 0px !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-radius: 0.25rem;
+}
+.mc-monthly-payment {
+    font-family: "Poppins";
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+    margin-top: 30px;
+}
+.mc-monthly-payment-text {
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    margin-top: 8px;
+}
+.mc-table-wrapper {
+    padding-top: 70px;
+}
+#mc-chart {
+    width: auto !important;
+    height: 218px !important;
+    margin: 0 auto;
+}
+.mc-box {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    display: inline-block;
+}
+.principalColor {
+    background-color: #1586B2;
+}
+.interestColor {
+    background-color: #DF863A;
+}
+.payableColor {
+    background-color: #212529;
+}
+.mc-data-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+.mc-box-wrapper, h5.mc-summary-value {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    padding-left: 15%;
+}
+.mc-box-wrapper, .mc-summary-value {
+    width: 100%;
+}
+.mc-summary-title, .mc-summary-value {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins" !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    color: #000 !important;
+    text-align: center;
+    margin: 4px 0px;
+}
+.mc-disclosure {
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    padding: 40px 12px 0px 12px;
+}
+.mc-disclosure p {
+    margin: 0px;
+}
+

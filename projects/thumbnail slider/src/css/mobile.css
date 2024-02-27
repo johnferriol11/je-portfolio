@@ -1,0 +1,15 @@
+.newICS-arrow {
+    padding: 0px 10px;
+}
+.newICS-thumbnail-wrapper {
+    padding: 0px 15px;
+}
+.newICS-content-wrapper {
+    padding: 50px 0px 0px 0px;
+}
+.newICS-thumbnail-wrapper .swiper-button-prev {
+    left: -10px;
+}
+.newICS-thumbnail-wrapper .swiper-button-next {
+    right: -10px;
+}

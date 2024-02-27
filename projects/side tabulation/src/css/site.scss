@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.st2-wrapper {
+    position: relative;
+
+    & .st2-wrapper-inner {
+        display: grid;
+        gap: 70px;
+        grid-template-columns: 550px repeat(auto-fit, minmax(650px, 1fr));
+        max-width: calc(100% - 200px);
+        margin: 50px auto;
+
+        & .st2-column {
+            &.right {
+                padding-left: 20px;
+            }
+
+            & .st2-image {
+                & img {
+                    width: 100%;
+                    height: 500px;
+                    object-fit: contain;
+                    object-position: left center;
+                }
+            }
+            & .st2-button {
+                margin-top: 30px;
+
+                & a {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: "Poppins";
+                    font-size: 16px;
+                    font-weight: 400;
+                    width: 200px;
+                    height: 50px;
+                    border-radius: 50px;
+                    text-decoration: none;
+                    color: #fff;
+                    background-color: #4F543E;
+                }
+            }
+
+            & .st2-tabs {
+                position: relative;
+                display: block;
+                padding-left: 50px;
+                padding-bottom: 30px;
+                cursor: pointer;
+
+                &.active {
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        width: 3px;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        border-left: 3px solid #4F543E;
+                    }
+                    
+                    & .st2-title-wrapper {
+                        & .st2-number {
+                            color: #ffffff;
+                            background: #4F543E;
+                        }
+                    }
+                }
+
+                &:not(.active) {
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        width: 3px;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        border-left: 3px dashed #E5EACC;
+                    }
+
+                    & .st2-title-wrapper {
+                        & .st2-number {
+                            color: #000;
+                            background: #E5EACC;
+                        }
+                    }
+                }
+
+                &::before {
+                    transition: all ease-in-out .32s;
+                }
+
+                & .st2-title-wrapper {
+                    & .st2-number {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        top: 0;
+                        left: -13.5px;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50px;
+                        font-family: "Poppins";
+                        font-size: 16px;
+                        font-weight: 400;
+                        transition: all ease-in-out .32s;
+                    }
+                    & .st2-title {
+                        font-family: "Poppins";
+                        font-size: 25px;
+                        font-weight: 600;
+                        margin-bottom: 30px;
+                    }
+                }
+
+                & .st2-description {
+                    display: none;
+                    font-family: "Poppins";
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 26px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+.st2-wrapper .st2-wrapper-inner {
+    grid-template-columns: 1fr;
+    max-width: calc(100% - 0px);
+}
+
+.st2-wrapper .st2-wrapper-inner .st2-column .st2-image img {
+    height: 400px;
+}

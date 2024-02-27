@@ -1,0 +1,9 @@
+.mc-main-wrapper {
+    padding: 20px 0px;
+}
+.mc-cols-wrapper {
+    flex-direction: column-reverse;
+}
+.mc-inputs-wrapper {
+    padding-top: 30px;
+}

@@ -15,12 +15,37 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
 </head>
 <body>
+    <div class="setting-wrapper">
+        <div class="dropdown-container">
+            <select class="selectEffects">
+                <option class="effects-filter" value="">Effects</option>
+                <option class="" value="flip">Flip</option>
+                <option class="" value="push">Push</option>
+                <option class="" value="slide">Slide</option>
+                <option class="" value="fade">Fade In</option>
+                <option class="" value="zoomIn">Zoom In</option>
+                <option class="" value="zoomOut">Zoom Out</option>
+            </select>
+        </div>
+
+        <div class="dropdown-container">
+            <select class="selectDirection">
+                <option class="direction-filter" value="">Direction</option>
+                <option class="" value="Top">Top</option>
+                <option class="" value="Left">Left</option>
+                <option class="" value="Right">Right</option>
+                <option class="" value="Bottom">Bottom</option>
+            </select>
+        </div>
+    </div>
+    
     <div class="flipbox-main-wrapper">
         <script id="flipbox-module" type="text/x-handlebars-template">
             {{#each flipBoxList}}
             <div class="flipbox-column-wrapper {{effects}}">
                 <div class="flipbox-column {{#equals effects 'flip'}}{{flipDirection}}{{/equals}} {{#equals effects 'push'}}{{pushDirection}}{{/equals}} {{#equals effects 'slide'}}{{slideDirection}}{{/equals}}">
                     <div class="flipbox-front {{frontBgOverlay}}" style="background-image: url({{frontBgImage}});">
+                        <div class="gradient"></div>
                         <div class="inner {{#if is3D}}threeD{{/if}}">
                             
                             {{#if showFrontImage}}
@@ -67,10 +92,18 @@
                             {{/if}}
                             
                             {{#if showBackBtn}}
-                                <a href="{{backBtnLink}}">
+                                <a class="button-link" href="{{backBtnLink}}">
                                     <span class="text">{{backBtnText}}</span>
                                 </a>
                             {{/if}}
+
+                            <div class="social-media">
+                                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://twitter.com/?lang=en" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </div>
                             
                         </div>
                     </div>

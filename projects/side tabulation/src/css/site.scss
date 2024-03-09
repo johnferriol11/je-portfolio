@@ -19,12 +19,14 @@
                 & img {
                     width: 100%;
                     height: 500px;
-                    object-fit: contain;
+                    object-fit: cover;
                     object-position: left center;
+                    border-top-left-radius: 30%;
+                    border-bottom-right-radius: 30%;
                 }
             }
             & .st2-button {
-                margin-top: 30px;
+                margin-top: 50px;
 
                 & a {
                     position: relative;
@@ -40,6 +42,11 @@
                     text-decoration: none;
                     color: #fff;
                     background-color: #4F543E;
+                    transition: all ease-in-out .32s;
+
+                    &:hover {
+                        background-color: #292e1a;
+                    }
                 }
             }
 

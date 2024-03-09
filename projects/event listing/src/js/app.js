@@ -29,7 +29,7 @@ let callbackAPI = {
     }
 };
 
-let layout = 'card'; //calendar
+let layout = "card"; //card, calendar
 let showInvolvementType = true;
 let showTitle = true;
 let showCityRegion = true;
@@ -43,21 +43,21 @@ let showChildCare = true;
 
 let group = [
     {
-        title: 'Wedding Event',
-        cityRegion: 'Armidale, NSW',
+        title: 'Tech Summit 2024',
+        cityRegion: 'San Francisco, CA',
         fullDate: '10/05/2025',
         nextDate: '10/26/2025, 11/03/2025, 11/10/2025, 11/17/2025, 11/24/2025, 11/31/2025',
         eventDay: 'Monday',
         startTime: '07:00 AM',
-        targetAudience: 'Married Couples',
-        ageRange: '18-65',
-        description: 'This is a text area for titles and paragraphs. Writing in paragraphs lets your visitor find what they are looking for quickly and easily. Make sure your titles stand out from the rest of the text.',
-        heroImage: 'https://images.pexels.com/photos/382297/pexels-photo-382297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        leaders: 'Sample Leaders',
+        targetAudience: 'Entrepreneurs',
+        ageRange: '18+',
+        description: 'Join us for the latest in technology trends and innovations.',
+        heroImage: 'https://images.pexels.com/photos/16031988/pexels-photo-16031988/free-photo-of-drawing-tablet-in-sunlight.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        leaders: 'John Doe',
         addressRoom: 'Main 202',
         video: 'https://www.youtube.com/watch?v=NpEaa2P7qZI',
-        groupSize: 'Less than 10',
-        tags: 'Marriage',
+        groupSize: '500',
+        tags: 'Technology, Networking, Innovation',
         campus: 'Sample Campus',
         childcare: 'No',
         inpersonOnline: 'Both',
@@ -67,21 +67,21 @@ let group = [
         page_item_url: '/'
     },
     {
-        title: 'Birthday Event',
-        cityRegion: 'Tennant Creek, NT',
+        title: 'Art Exhibition: Modern Perspectives',
+        cityRegion: 'New York, NY',
         fullDate: '10/05/2025',
         nextDate: '10/26/2025, 11/03/2025, 11/10/2025, 11/17/2025, 11/24/2025, 11/31/2025',
         eventDay: 'Monday',
         startTime: '07:00 AM',
-        targetAudience: 'Family',
-        ageRange: '18-65',
-        description: 'This is a text area for titles and paragraphs. Writing in paragraphs lets your visitor find what they are looking for quickly and easily. Make sure your titles stand out from the rest of the text.',
-        heroImage: 'https://images.pexels.com/photos/382297/pexels-photo-382297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        leaders: 'Sample Leaders',
+        targetAudience: 'Students',
+        ageRange: 'All ages',
+        description: 'Explore the vibrant world of contemporary art.',
+        heroImage: 'https://images.pexels.com/photos/1839919/pexels-photo-1839919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        leaders: 'Emily Johnson',
         addressRoom: 'Main 202',
         video: 'https://www.youtube.com/watch?v=NpEaa2P7qZI',
-        groupSize: 'Less than 10',
-        tags: 'Party',
+        groupSize: '200',
+        tags: 'Art, Contemporary, Exhibition',
         campus: 'Sample Campus',
         childcare: 'No',
         inpersonOnline: 'Both',
@@ -91,21 +91,189 @@ let group = [
         page_item_url: '/'
     },
     {
-        title: 'Concert Event',
-        cityRegion: 'Loxton, SA',
+        title: 'Global Health Conference',
+        cityRegion: 'Geneva, Switzerland',
         fullDate: '10/05/2025',
         nextDate: '10/26/2025, 11/03/2025, 11/10/2025, 11/17/2025, 11/24/2025, 11/31/2025',
         eventDay: 'Monday',
         startTime: '07:00 AM',
-        targetAudience: 'Artist',
-        ageRange: '18-65',
-        description: 'This is a text area for titles and paragraphs. Writing in paragraphs lets your visitor find what they are looking for quickly and easily. Make sure your titles stand out from the rest of the text.',
-        heroImage: 'https://images.pexels.com/photos/382297/pexels-photo-382297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        leaders: 'Sample Leaders',
+        targetAudience: 'Researchers',
+        ageRange: '21+',
+        description: 'Discussing challenges and solutions in global healthcare.',
+        heroImage: 'https://images.pexels.com/photos/39671/physiotherapy-weight-training-dumbbell-exercise-balls-39671.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        leaders: 'Mark Smith',
         addressRoom: 'Main 202',
         video: 'https://www.youtube.com/watch?v=NpEaa2P7qZI',
-        groupSize: 'Less than 10',
-        tags: 'Party',
+        groupSize: '300',
+        tags: 'Health, Wellness, Expo',
+        campus: 'Sample Campus',
+        childcare: 'No',
+        inpersonOnline: 'Both',
+        languages: 'English',
+        involvementType: 'Standard Event',
+        registrationLink: '/',
+        page_item_url: '/'
+    },
+    {
+        title: 'Startup Pitch Day',
+        cityRegion: 'Berlin, Germany',
+        fullDate: '10/05/2025',
+        nextDate: '10/26/2025, 11/03/2025, 11/10/2025, 11/17/2025, 11/24/2025, 11/31/2025',
+        eventDay: 'Monday',
+        startTime: '07:00 AM',
+        targetAudience: 'Investors',
+        ageRange: 'All ages',
+        description: 'Watch promising startups pitch their ideas to investors.',
+        heroImage: 'https://images.pexels.com/photos/7414214/pexels-photo-7414214.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        leaders: 'Dr. Sarah Johnson',
+        addressRoom: 'Main 202',
+        video: 'https://www.youtube.com/watch?v=NpEaa2P7qZI',
+        groupSize: '400',
+        tags: 'Investors, Entrepreneurship',
+        campus: 'Sample Campus',
+        childcare: 'No',
+        inpersonOnline: 'Both',
+        languages: 'English',
+        involvementType: 'Standard Event',
+        registrationLink: '/',
+        page_item_url: '/'
+    },
+    {
+        title: 'Music Festival: Summer Sounds',
+        cityRegion: 'Los Angeles, CA',
+        fullDate: '10/05/2025',
+        nextDate: '10/26/2025, 11/03/2025, 11/10/2025, 11/17/2025, 11/24/2025, 11/31/2025',
+        eventDay: 'Monday',
+        startTime: '07:00 AM',
+        targetAudience: 'Music lovers',
+        ageRange: 'All ages',
+        description: 'Experience a lineup of diverse musical performances.',
+        heroImage: 'https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        leaders: 'John Jackson',
+        addressRoom: 'Main 202',
+        video: 'https://www.youtube.com/watch?v=NpEaa2P7qZI',
+        groupSize: '1000',
+        tags: 'Music, Festival, Concert',
+        campus: 'Sample Campus',
+        childcare: 'No',
+        inpersonOnline: 'Both',
+        languages: 'English',
+        involvementType: 'Standard Event',
+        registrationLink: '/',
+        page_item_url: '/'
+    },
+    {
+        title: 'Literary Symposium',
+        cityRegion: 'London, UK',
+        fullDate: '10/05/2025',
+        nextDate: '10/26/2025, 11/03/2025, 11/10/2025, 11/17/2025, 11/24/2025, 11/31/2025',
+        eventDay: 'Monday',
+        startTime: '07:00 AM',
+        targetAudience: 'Authors',
+        ageRange: '18+',
+        description: 'Celebrating literature from around the world.',
+        heroImage: 'https://images.pexels.com/photos/6980999/pexels-photo-6980999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        leaders: 'Steven Spielberg',
+        addressRoom: 'Main 202',
+        video: 'https://www.youtube.com/watch?v=NpEaa2P7qZI',
+        groupSize: '600',
+        tags: 'Authors, Books',
+        campus: 'Sample Campus',
+        childcare: 'No',
+        inpersonOnline: 'Both',
+        languages: 'English',
+        involvementType: 'Standard Event',
+        registrationLink: '/',
+        page_item_url: '/'
+    },
+    {
+        title: 'Food Expo: Taste of the World',
+        cityRegion: 'Tokyo, Japan',
+        fullDate: '10/05/2025',
+        nextDate: '10/26/2025, 11/03/2025, 11/10/2025, 11/17/2025, 11/24/2025, 11/31/2025',
+        eventDay: 'Monday',
+        startTime: '07:00 AM',
+        targetAudience: 'Chefs',
+        ageRange: '21+',
+        description: 'Sample cuisines from different cultures and regions.',
+        heroImage: 'https://images.pexels.com/photos/16135140/pexels-photo-16135140/free-photo-of-chefs-preparing-pastries.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        leaders: 'Gordon Ramsay',
+        addressRoom: 'Main 202',
+        video: 'https://www.youtube.com/watch?v=NpEaa2P7qZI',
+        groupSize: '250',
+        tags: 'Food, Wind, Expo',
+        campus: 'Sample Campus',
+        childcare: 'No',
+        inpersonOnline: 'Both',
+        languages: 'English',
+        involvementType: 'Standard Event',
+        registrationLink: '/',
+        page_item_url: '/'
+    },
+    {
+        title: 'Environmental Summit',
+        cityRegion: 'Sydney, Australia',
+        fullDate: '10/05/2025',
+        nextDate: '10/26/2025, 11/03/2025, 11/10/2025, 11/17/2025, 11/24/2025, 11/31/2025',
+        eventDay: 'Monday',
+        startTime: '07:00 AM',
+        targetAudience: 'Researchers',
+        ageRange: 'All ages',
+        description: 'Addressing pressing environmental issues and solutions.',
+        heroImage: 'https://images.pexels.com/photos/414837/pexels-photo-414837.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        leaders: 'Anna Wintour',
+        addressRoom: 'Main 202',
+        video: 'https://www.youtube.com/watch?v=NpEaa2P7qZI',
+        groupSize: '800',
+        tags: 'Researchers, Environment',
+        campus: 'Sample Campus',
+        childcare: 'No',
+        inpersonOnline: 'Both',
+        languages: 'English',
+        involvementType: 'Standard Event',
+        registrationLink: '/',
+        page_item_url: '/'
+    },
+    {
+        title: 'Fashion Week',
+        cityRegion: 'Paris, France',
+        fullDate: '10/05/2025',
+        nextDate: '10/26/2025, 11/03/2025, 11/10/2025, 11/17/2025, 11/24/2025, 11/31/2025',
+        eventDay: 'Monday',
+        startTime: '07:00 AM',
+        targetAudience: 'Designers',
+        ageRange: '18+',
+        description: 'Showcasing the latest trends in fashion and design.',
+        heroImage: 'https://images.pexels.com/photos/322207/pexels-photo-322207.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        leaders: 'Dr. James Watson',
+        addressRoom: 'Main 202',
+        video: 'https://www.youtube.com/watch?v=NpEaa2P7qZI',
+        groupSize: '350',
+        tags: 'Fashion, Design',
+        campus: 'Sample Campus',
+        childcare: 'No',
+        inpersonOnline: 'Both',
+        languages: 'English',
+        involvementType: 'Standard Event',
+        registrationLink: '/',
+        page_item_url: '/'
+    },
+    {
+        title: 'Film Festival: Cinematic Showcase',
+        cityRegion: 'Toronto, Canada',
+        fullDate: '10/05/2025',
+        nextDate: '10/26/2025, 11/03/2025, 11/10/2025, 11/17/2025, 11/24/2025, 11/31/2025',
+        eventDay: 'Monday',
+        startTime: '07:00 AM',
+        targetAudience: 'Filmmakers',
+        ageRange: 'All ages',
+        description: 'Screening a selection of acclaimed and independent films.',
+        heroImage: 'https://images.pexels.com/photos/1117132/pexels-photo-1117132.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        leaders: 'Dr. Maya Patel',
+        addressRoom: 'Main 202',
+        video: 'https://www.youtube.com/watch?v=NpEaa2P7qZI',
+        groupSize: '400',
+        tags: 'Film, Cinema, Festival',
         campus: 'Sample Campus',
         childcare: 'No',
         inpersonOnline: 'Both',
@@ -120,8 +288,8 @@ let filterTargetAudience = '';
 let filterCampus = '';
 let filterTags = '';
 
-let gradient1 = '#f7971e';
-let gradient2 = '#ffd200';
+let gradient1 = '#a42d3a';
+let gradient2 = '#e14658';
 let favicon = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIHJIDMF7f_O8wo1GdqX9ABtUqKgeueN-qRg&usqp=CAU';
 let dateList = ["January", "February","March","April","May","June","July","August","September","October","November","December"]
 let days = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
@@ -166,131 +334,145 @@ let defaultFilterObj = {
 
 let filteredList = multiFilter(groupList, defaultFilterObj);
 
-callbackAPI.runOnReady('groupListing', function(){
-    filterStructure();
-    cardCalendarStructure();
-    getCategory(filteredList);
-    
-    if(layout == "card") {
-        callbackAPI.loadScript('https://irt-cdn.multiscreensite.com/5775367238d847b8b62d126ce25c20de/files/uploaded/mixitup.min.js', function() {
-            callbackAPI.loadScript('https://irt-cdn.multiscreensite.com/a4fddbba6e6f4d71b2bb406911fe4018/files/uploaded/mixitup-multifilter.min.js', function() { 
-                callbackAPI.loadScript('https://irt-cdn.multiscreensite.com/a4fddbba6e6f4d71b2bb406911fe4018/files/uploaded/mixitup-pagination.min.js', function() { 
-                    callbackAPI.loadScript('https://irp-cdn.multiscreensite.com/7c044735/files/uploaded/moment.min.js', function() { 
-                        callbackAPI.loadScript('https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.23/moment-timezone.min.js', function() { 
-                            //append all group 
-                            let listSortByDate = sortArray(filteredList);
-                            console.log(listSortByDate);
-                            
-                            $('.container .contents-box').html(createBox(listSortByDate));
-                            
-                            const mixer = mixitup(".container", {
-                                multifilter: {
-                                    enable: true,
-                                    // parseOn: 'submit',
-                                },
-                                animation: {
-                                    easing: 'cubic-bezier(0.645, 0.045, 0.355, 1)',
-                                    animateResizeContainer: false
-                                },
-                                callbacks: {
-                                    onMixStart: function(state, futureState) {
-                                        // mixer.sort('published-date:asc');
-                                        $(".reset-btn").click(function() {
-                                            mixer.filter('.mix');
-                                        });
+init();
+function init() {
+    callbackAPI.runOnReady('groupListing', function(){
+        filterStructure();
+        cardCalendarStructure();
+        getCategory(filteredList);
+        
+        if(layout == "card") {
+            callbackAPI.loadScript('https://irt-cdn.multiscreensite.com/5775367238d847b8b62d126ce25c20de/files/uploaded/mixitup.min.js', function() {
+                callbackAPI.loadScript('https://irt-cdn.multiscreensite.com/a4fddbba6e6f4d71b2bb406911fe4018/files/uploaded/mixitup-multifilter.min.js', function() { 
+                    callbackAPI.loadScript('https://irt-cdn.multiscreensite.com/a4fddbba6e6f4d71b2bb406911fe4018/files/uploaded/mixitup-pagination.min.js', function() { 
+                        callbackAPI.loadScript('https://irp-cdn.multiscreensite.com/7c044735/files/uploaded/moment.min.js', function() { 
+                            callbackAPI.loadScript('https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.23/moment-timezone.min.js', function() { 
+                                //append all group 
+                                let listSortByDate = sortArray(filteredList);
+                                console.log(listSortByDate);
+                                
+                                $('.container .contents-box').html(createBox(listSortByDate));
+                                
+                                const mixer = mixitup(".container", {
+                                    multifilter: {
+                                        enable: true,
+                                        // parseOn: 'submit',
+                                    },
+                                    animation: {
+                                        easing: 'cubic-bezier(0.645, 0.045, 0.355, 1)',
+                                        animateResizeContainer: false
+                                    },
+                                    callbacks: {
+                                        onMixStart: function(state, futureState) {
+                                            // mixer.sort('published-date:asc');
+                                            $(".reset-btn").click(function() {
+                                                mixer.filter('.mix');
+                                            });
+                                        }
+                                    },
+                                    pagination: {
+                                        limit: 6,
+                                        maintainActivePage: false,
+                                        loop: true,
+                                        hidePageListIfSinglePage: true
+                                    },
+                                    controls: {
+                                        live: true,
+                                        toggleDefault: 'all'
                                     }
-                                },
-                                pagination: {
-                                    limit: 6,
-                                    maintainActivePage: false,
-                                    loop: true,
-                                    hidePageListIfSinglePage: true
-                                },
-                                controls: {
-                                    live: true,
-                                    toggleDefault: 'all'
-                                }
-                            });
-                            
-                            defautlFilter.toLowerCase() == "standard event" ? mixer.sort('published-date:asc') : mixer.sort('days:asc');
-                            // mixer.sort('published-date:asc');
-                            // mixer.sort('published-date:desc');
-                            
-                            let inputText;
-                            let $matching = $();
-                            
-                            // Delay function
-                            let delay = (function(){
-                                let timer = 0;
-                                return function(callback, ms){
-                                    clearTimeout (timer);
-                                    timer = setTimeout(callback, ms);
-                                };
-                            })();
-                            
-                            //ONCLICK SEARCH
-                            $("#searchBar").keyup(function(){
-                                delay(function(){
-                                    inputText = !!$("#searchBar").val() ? $("#searchBar").val().toLowerCase() : '';
-                                    
-                                    if((inputText.length) > 0) {
-                                        $('.mix').each(function() {
-                                            if( $(this).find('.tags').text().toLowerCase().match(inputText) || $(this).find('.cbTitle').text().toLowerCase().match(inputText) || $(this).find('.cbLocation').text().toLowerCase().match(inputText) || $(this).find('.targetAud').text().toLowerCase().match(inputText) || $(this).find('.description').text().toLowerCase().match(inputText) || $(this).find('.campus').text().toLowerCase().match(inputText) || $(this).find('.leaders').text().toLowerCase().match(inputText)   ) {
-                                                $matching = $matching.add(this);
-                                            }
-                                            else {
-                                                $matching = $matching.not(this);
-                                            }
-                                        });
-            
-                                        mixer.filter($matching);
-                                    } else {
-                                        mixer.filter("all");
-                                    }
-                                }, 200);
+                                });
+                                
+                                defautlFilter.toLowerCase() == "standard event" ? mixer.sort('published-date:asc') : mixer.sort('days:asc');
+                                // mixer.sort('published-date:asc');
+                                // mixer.sort('published-date:desc');
+                                
+                                let inputText;
+                                let $matching = $();
+                                
+                                // Delay function
+                                let delay = (function(){
+                                    let timer = 0;
+                                    return function(callback, ms){
+                                        clearTimeout (timer);
+                                        timer = setTimeout(callback, ms);
+                                    };
+                                })();
+                                
+                                //ONCLICK SEARCH
+                                $("#searchBar").keyup(function(){
+                                    delay(function(){
+                                        inputText = !!$("#searchBar").val() ? $("#searchBar").val().toLowerCase() : '';
+                                        
+                                        if((inputText.length) > 0) {
+                                            $('.mix').each(function() {
+                                                if( $(this).find('.tags').text().toLowerCase().match(inputText) || $(this).find('.cbTitle').text().toLowerCase().match(inputText) || $(this).find('.cbLocation').text().toLowerCase().match(inputText) || $(this).find('.targetAud').text().toLowerCase().match(inputText) || $(this).find('.description').text().toLowerCase().match(inputText) || $(this).find('.campus').text().toLowerCase().match(inputText) || $(this).find('.leaders').text().toLowerCase().match(inputText)   ) {
+                                                    $matching = $matching.add(this);
+                                                }
+                                                else {
+                                                    $matching = $matching.not(this);
+                                                }
+                                            });
+                
+                                            mixer.filter($matching);
+                                        } else {
+                                            mixer.filter("all");
+                                        }
+                                    }, 200);
+                                });
                             });
                         });
                     });
                 });
             });
-        });
-    }else {
-        callbackAPI.loadScript('https://irp-cdn.multiscreensite.com/7c044735/files/uploaded/moment.min.js',function(){
-            callbackAPI.loadScript('https://cdn.jsdelivr.net/npm/fullcalendar@5.1.0/main.js',function(){
-                callbackAPI.loadScript('https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.23/moment-timezone.min.js',function(){
-                    filterCalendarData();
-                    
-                    $('.selectTtitle, .selectChildcare, .filterCat input[type="checkbox"]').change(function() {
+        }else {
+            callbackAPI.loadScript('https://irp-cdn.multiscreensite.com/7c044735/files/uploaded/moment.min.js',function(){
+                callbackAPI.loadScript('https://cdn.jsdelivr.net/npm/fullcalendar@5.1.0/main.js',function(){
+                    callbackAPI.loadScript('https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.23/moment-timezone.min.js',function(){
                         filterCalendarData();
+                        
+                        $('.selectTtitle, .selectChildcare, .filterCat input[type="checkbox"]').change(function() {
+                            filterCalendarData();
+                        });
+                        
+                        $(".reset-btn").click(function() {
+                            $('.selectTtitle').val(''); 
+                            $('.filterCat input[type="checkbox"]').prop('checked', false); 
+                            filterCalendarData();
+                        });
+                        
+                        $('.calCloseButton').click(function(){
+                            $('.appendhere').removeClass('modalShow').addClass("modalHide");	
+                        });
                     });
-                    
-                    $(".reset-btn").click(function() {
-                        $('.selectTtitle').val(''); 
-                        $('.filterCat input[type="checkbox"]').prop('checked', false); 
-                        filterCalendarData();
-                    });
-                    
-                    $('.calCloseButton').click(function(){
-                        $('.appendhere').removeClass('modalShow').addClass("modalHide");	
-                    });
-                });
-            });    
+                });    
+            });
+        }
+
+        //category accordion
+        $(".catName").click(function() {
+            $(this).next( "fieldset" ).slideToggle();
+            $(".catName").not(this).next( "fieldset" ).slideUp();
+
+            $(this).find('i').toggleClass('fa-plus');
+            $(this).find('i').toggleClass('fa-minus');
+            $(".catName").not(this).find('i').removeClass('fa-minus');
+            $(".catName").not(this).find('i').addClass('fa-plus');
+            
+            $(this).toggleClass('active-cat');
+            $(".catName").not(this).removeClass('active-cat');
         });
-    }
-});
 
-//category accordion
-$(".catName").click(function() {
-    $(this).next( "fieldset" ).slideToggle();
-    $(this).find('i').toggleClass('fa-plus');
-    $(this).find('i').toggleClass('fa-minus');
-    $(this).toggleClass('active-cat');
-});
+        //show hide filters
+        $(".showfiltercon span" ).click(function() {
+            $(".morefilters" ).slideToggle(500);
+            $(this).text($(this).text() == 'Show Filters' ? 'Hide Filters' : 'Show Filters');
+        });
+    });
+}
 
-//show hide filters
-$(".showfiltercon span" ).click(function() {
-    $(".morefilters" ).slideToggle(500);
-    $(this).text($(this).text() == 'Show Filters' ? 'Hide Filters' : 'Show Filters');
+$(".selectLayout").change(function() {
+    layout = !!$(this).val() ? $(this).val() : 'card';
+    init();
 });
 
 function filterStructure() {
@@ -854,10 +1036,14 @@ function appendCategories(uniqueData, classname) {
     let output = "";
 
     removeArrayDuplicates(uniqueData).map(function(i) {
-        output += `<div class="op ${i === "n/a" ? "hideEl" : ""}">
+        output += `
+            <div class="op ${i === "n/a" ? "hideEl" : ""}">
+                <label>
                     <input type="checkbox" name="${i}" value=".a-${replaceDash(i)}"/>
-                    <label>${toTitleCase(i)}</label>
-                </div>`;
+                    ${toTitleCase(i)}
+                </label>
+            </div>
+        `;
     });
 
     $(`.${classname}`).html(output);
@@ -976,3 +1162,21 @@ function addCss(id, url) {
         head.appendChild(link);
     }
 }
+
+//DISABLE RIGHT CLICK
+$(document).on("contextmenu", function(e) {
+    e.preventDefault();
+});
+
+//DISABLE INSPECT ELEMENT
+$(document).on("keydown", function(e) {
+    if (e.ctrlKey &&
+        (e.keyCode === 67 ||
+        e.keyCode === 86 ||
+        e.keyCode === 85 ||
+        e.keyCode === 117)) {
+        return false;
+    } else {
+        return true;
+    }
+});

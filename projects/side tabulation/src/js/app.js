@@ -3,29 +3,29 @@
 const data = {
     list: [
         {
-            title: "Begin your courses!",
-            description: "Now that you see the big picture, it's time to start your coursework. Our course are designed with you in mind, providing you with the knowledge and skills needed to excel as a real estate agent. Take the courses on your terms from the comfort oof your home. All courses can be completed in as little as 54 days!",
-            image: "https://irp.cdn-website.com/0680922f/dms3rep/multi/begin-your-course.png"
+            title: "Introduction to Python Programming",
+            description: "This course provides an introduction to the Python programming language. It covers basic concepts such as variables, data types, control structures, functions, and more.",
+            image: "https://images.pexels.com/photos/1181373/pexels-photo-1181373.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         },
         {
-            title: "Begin your courses!",
-            description: "Now that you see the big picture, it's time to start your coursework. Our course are designed with you in mind, providing you with the knowledge and skills needed to excel as a real estate agent. Take the courses on your terms from the comfort oof your home. All courses can be completed in as little as 54 days!",
-            image: "https://irp.cdn-website.com/0680922f/dms3rep/multi/begin-your-course.png"
+            title: "Web Development Fundamentals",
+            description: "Learn the fundamentals of web development including HTML, CSS, and JavaScript. This course covers essential concepts and techniques for building static and interactive web pages.",
+            image: "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         },
         {
-            title: "Begin your courses!",
-            description: "Now that you see the big picture, it's time to start your coursework. Our course are designed with you in mind, providing you with the knowledge and skills needed to excel as a real estate agent. Take the courses on your terms from the comfort oof your home. All courses can be completed in as little as 54 days!",
-            image: "https://irp.cdn-website.com/0680922f/dms3rep/multi/begin-your-course.png"
+            title: "Machine Learning Basics",
+            description: "Explore the basics of machine learning, including supervised and unsupervised learning algorithms, model evaluation, and feature engineering.",
+            image: "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         },
         {
-            title: "Begin your courses!",
-            description: "Now that you see the big picture, it's time to start your coursework. Our course are designed with you in mind, providing you with the knowledge and skills needed to excel as a real estate agent. Take the courses on your terms from the comfort oof your home. All courses can be completed in as little as 54 days!",
-            image: "https://irp.cdn-website.com/0680922f/dms3rep/multi/begin-your-course.png"
+            title: "Graphic Design Essentials",
+            description: "Master the essentials of graphic design including typography, color theory, layout principles, and design software tools such as Adobe Photoshop and Illustrator.",
+            image: "https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         },
         {
-            title: "Begin your courses!",
-            description: "Now that you see the big picture, it's time to start your coursework. Our course are designed with you in mind, providing you with the knowledge and skills needed to excel as a real estate agent. Take the courses on your terms from the comfort oof your home. All courses can be completed in as little as 54 days!",
-            image: "https://irp.cdn-website.com/0680922f/dms3rep/multi/begin-your-course.png"
+            title: "Financial Planning and Investment",
+            description: "Gain practical knowledge and skills in financial planning, investment strategies, risk management, and portfolio diversification.",
+            image: "https://images.pexels.com/photos/7821487/pexels-photo-7821487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         }
     ]
 };
@@ -83,4 +83,22 @@ $(".st2-tabs").click(function() {
     }
 
     tabImage(selectedIndex);
+});
+
+//DISABLE RIGHT CLICK
+$(document).on("contextmenu", function(e) {
+    e.preventDefault();
+});
+
+//DISABLE INSPECT ELEMENT
+$(document).on("keydown", function(e) {
+    if (e.ctrlKey &&
+        (e.keyCode === 67 ||
+        e.keyCode === 86 ||
+        e.keyCode === 85 ||
+        e.keyCode === 117)) {
+        return false;
+    } else {
+        return true;
+    }
 });

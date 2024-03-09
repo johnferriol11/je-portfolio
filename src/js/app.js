@@ -1,5 +1,32 @@
 "use strict";
 
+import about from "../components/about.js";
+import banner from "../components/banner.js";
+import contact from "../components/contact.js";
+import experience from "../components/experience.js";
+import footer from "../components/footer.js";
+import header from "../components/header.js";
+import preloader from "../components/preloader.js";
+import projects from "../components/projects.js";
+import skills from "../components/skills.js";
+
+//*APPEND STRUCTURE
+(function() {
+    $("#ms-root").html(`
+        ${ preloader() }
+        ${ header() }
+        <main class="ms-site-wrapper">
+            ${ banner() }
+            ${ about() }
+            ${ experience() }
+            ${ skills() }
+            ${ projects() }
+            ${ contact() }
+        </main>
+        ${ footer() }
+    `);
+})();
+
 const projectList = [
     {
         image: 'src/images/todolist-image.png',
@@ -9,7 +36,7 @@ const projectList = [
         link: 'https://johnferriol11.github.io/todolist/'
     },
     {
-        image: 'src/images/involvement-image.png, src/images/calendar-image.png',
+        image: 'src/images/event-listing.png, src/images/event-calendar-image.png',
         title: 'Event Listing',
         description: 'An app that showcase different types of events with a search and filter feature to easily navigate the specific event.',
         tags: 'HTML, CSS, JavaScript, Mixitup, FullCalendar',
@@ -23,48 +50,48 @@ const projectList = [
         link: 'projects/mortgage calculator'
     },
     {
-        image: 'src/images/thumbnail-icon-slider-image.png',
+        image: 'src/images/thumbnail-icon-slider.png',
         title: 'Thumbnail Icon Slider',
         description: 'Web feature incorporating a thumbnail icon slider, enabling effortless navigation through a visual array of content.',
         tags: 'HTML, CSS, JavaScript, Slick',
         link: 'projects/thumbnail slider'
     },
     {
-        image: 'src/images/testimonial-slider-image.png',
+        image: 'src/images/testimonial-slider.png',
         title: 'Testimonial Slider',
         description: 'An interactive web element showcasing a dynamic carousel of authentic user experiences and glowing reviews.',
         tags: 'HTML, CSS, JavaScript, Swiper',
         link: 'projects/testimonial slider'
     },
     {
-        image: 'src/images/video-gallery-image.png',
+        image: 'src/images/video-gallery.png',
         title: 'Video Gallery',
         description: 'An interactive web element offering a captivating showcase of diverse videos for an immersive viewing experience.',
         tags: 'HTML, CSS, JavaScript',
         link: 'projects/video gallery'
     },
     {
-        image: 'src/images/flip-box-image.png',
+        image: 'src/images/flipbox.png',
         title: 'Flip Box',
         description: 'An interactive web element showcasing information or images on both sides with engaging flipping motion and additional animations for a dynamic user experience.',
         tags: 'HTML, CSS, JavaScript',
         link: 'projects/flipbox'
     },
     {
-        image: 'src/images/side-tabulation-image.png',
+        image: 'src/images/side-tabulation.png',
         title: 'Side Tabulation',
         description: 'An interactive web element offering quick and easy content organization for an enhanced browsing experience.',
         tags: 'HTML, CSS, JavaScript',
         link: 'projects/side tabulation'
     },
     {
-        image: 'src/images/animated-photo-gallery-image.png, src/images/animated-video-gallery-image.png',
+        image: 'src/images/animated-media-gallery-vertical-image.png, src/images/animated-media-gallery-horizontal-image.png, src/images/animated-media-gallery-vertical-video.png, src/images/animated-media-gallery-horizontal-video.png',
         title: 'Animated Media Gallery',
         description: 'An engaging multimedia gallery featuring an animated scrolling effect.',
         tags: 'HTML, CSS, JavaScript',
         link: 'projects/media gallery'
     }
-]
+];
 
 $(document).ready(function() {
     //HIDE PRELOADER ON LOAD
@@ -115,7 +142,7 @@ function  swiperInit() {
 }
 
 //*INITIALIZE BANNER PARTICLES
-let particlesColor = $('body').hasClass('light-mode') ? "#B39B78" : "#00adb5";
+let particlesColor = $('body').hasClass('light-mode') ? "#B39B78" : "#00fff5";
 initializeParticlesJS(particlesColor);
 
 //*INITIALIZE ANIMATION ON SCROLL
@@ -186,7 +213,7 @@ $(window).scroll(function() {
 $('.ui-switch').click(function() {
     let isDarkMode = $('.ui-switch input').is(":checked");
     setThemeColor(isDarkMode);
-    let primary_color = isDarkMode ? "#00adb5" : "#B39B78";
+    let primary_color = isDarkMode ? "#00fff5" : "#B39B78";
     initializeParticlesJS(primary_color);
 });
 
@@ -452,20 +479,20 @@ function setThemeColor(isDarkMode) {
     isDarkMode ? $('body').removeClass('light-mode') : $('body').addClass('light-mode');
 }
 
-//DISABLE RIGHT CLICK
-$(document).on("contextmenu", function(e) {
-    e.preventDefault();
-});
+// //DISABLE RIGHT CLICK
+// $(document).on("contextmenu", function(e) {
+//     e.preventDefault();
+// });
 
-//DISABLE INSPECT ELEMENT
-$(document).on("keydown", function(e) {
-    if (e.ctrlKey &&
-        (e.keyCode === 67 ||
-        e.keyCode === 86 ||
-        e.keyCode === 85 ||
-        e.keyCode === 117)) {
-        return false;
-    } else {
-        return true;
-    }
-});
+// //DISABLE INSPECT ELEMENT
+// $(document).on("keydown", function(e) {
+//     if (e.ctrlKey &&
+//         (e.keyCode === 67 ||
+//         e.keyCode === 86 ||
+//         e.keyCode === 85 ||
+//         e.keyCode === 117)) {
+//         return false;
+//     } else {
+//         return true;
+//     }
+// });

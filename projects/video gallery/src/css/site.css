@@ -34,7 +34,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(0,0,0,0.5);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 75%, rgba(255, 255, 255, 0) 100%);
     z-index: 1;
 }
 .videoGallery-Filter {
@@ -104,7 +104,7 @@
 h3.title {
     font-family: "Poppins";
     font-weight: 600;
-    color: #CB861A;
+    color: #ffbd56;
     text-align: left;
 }
 h3.title {
@@ -113,7 +113,7 @@ h3.title {
 h5.category {
     font-family: "Poppins";
     font-weight: 600;
-    color: #FFDB84;
+    color: #fff;
     text-align: left;
 }
 h5.category {

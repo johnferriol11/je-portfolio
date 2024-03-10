@@ -264,7 +264,7 @@ function initializeParticlesJS(particlesColor) {
     particlesJS("particles-js", {
         "particles": {
             "number": {
-                "value": 80,
+                "value": 60,
                 "density": {
                     "enable": true,
                     "value_area": 800
@@ -479,20 +479,20 @@ function setThemeColor(isDarkMode) {
     isDarkMode ? $('body').removeClass('light-mode') : $('body').addClass('light-mode');
 }
 
-// //DISABLE RIGHT CLICK
-// $(document).on("contextmenu", function(e) {
-//     e.preventDefault();
-// });
+//DISABLE RIGHT CLICK
+$(document).on("contextmenu", function(e) {
+    e.preventDefault();
+});
 
-// //DISABLE INSPECT ELEMENT
-// $(document).on("keydown", function(e) {
-//     if (e.ctrlKey &&
-//         (e.keyCode === 67 ||
-//         e.keyCode === 86 ||
-//         e.keyCode === 85 ||
-//         e.keyCode === 117)) {
-//         return false;
-//     } else {
-//         return true;
-//     }
-// });
+//DISABLE INSPECT ELEMENT
+$(document).on("keydown", function(e) {
+    if (e.ctrlKey &&
+        (e.keyCode === 67 ||
+        e.keyCode === 86 ||
+        e.keyCode === 85 ||
+        e.keyCode === 117)) {
+        return false;
+    } else {
+        return true;
+    }
+});
